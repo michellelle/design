@@ -6,7 +6,7 @@ group :production do
   gem 'rails_12factor' 
  end
 
-gem 'ruby' '2.2.4'
+gem 'ruby',  '2.2.4'
 #Use font awesome library for icons.
 gem 'font-awesome-sass', '~> 4.6.2'
 #Use bootstrap library for style.
