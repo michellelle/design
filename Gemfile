@@ -6,6 +6,7 @@ group :production do
   gem 'rails_12factor' 
  end
 
+gem 'devise', '~> 4.1.1'
 #Use font awesome library for icons.
 gem 'font-awesome-sass', '~> 4.6.2'
 #Use bootstrap library for style.
