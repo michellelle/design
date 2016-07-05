@@ -11,24 +11,33 @@ body {
     padding-left: 30px;
 }
 
-.f.submit {
-      background: #fff;
-      color: #000;
- }
 
-.btn-default:hover {
-      background: #3333ff;
+.btn {
+      background: #85afc7;
       color: #fff;
 }
 
 .h2, .h4 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Merriweather', serif;
     font-weight: 400; 
 }
 
-.navbar {
-    opacity: 0.8;
+/* Dropdown links */
+.dropdown-menu li a {
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+    color: #000;
 }
+
+.open .dropdown-toggle {
+    color: #fff ;
+    background-color: #555;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #85acf7;
+}
+
    /* Add a gray background color and some padding to the footer */
     footer {
       background-color: #f2f2f2;
@@ -53,15 +62,15 @@ body {
 
 .carousel-control.right, .carousel-control.left {
     background-image: none;
-    color: #3333ff;
+    color: #85afc7;
 }
 
 .carousel-indicators li {
-    border-color: #3333ff;
+    border-color: #85afc7;
 }
 
 .carousel-indicators li.active {
-    background-color: #3333ff;
+    background-color: #85afc7;
 }
 
 .item h4 {
@@ -70,7 +79,7 @@ body {
     font-weight: 400;
     font-style: italic;
     margin: 70px 0;
-    font-family: 'Oswald', 'sans-serif';
+    font-family: 'Arimo', 'sans-serif';
 }
 
 .item span {
