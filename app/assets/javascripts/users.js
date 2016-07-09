@@ -1,10 +1,10 @@
 $(document).ready(function() {
-    Sripe.setPublishableKey($('meta[name="strip-key"]').attr('content'));
+    Stripe.setPublishableKey($('meta[name="strip-key"]').attr('content'));
     // Watch for a form submission:
     $("#form-submit-btn").click(function(event) {
         event.preventDefault();
         $('input[type=submit]').prop('disabled', true);
-        ver error = false;
+        var error = false;
         var ccNum = $('#card_number').val(),
             cvcNum = $('#card_code').val(),
             expMonth = $('#card_month').val(),
@@ -17,7 +17,7 @@ $(document).ready(function() {
                 cvc: cvcNum,
                 exp_month: expMonth,
                 exp_year: expYear
-            }, stripeResponeHandler);
+            }, stripeResponseHandler);
         }
         return false;
     }); // form submission
