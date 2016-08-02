@@ -1,6 +1,6 @@
 /*global $*/ /*global Stripe*//*global stripeResponseHandler*/
 $(document).ready(function() {
-    Stripe.setPublishableKey($('meta[name="strip-key"]').attr('content'));
+    Stripe.setPublishableKey($('meta[name="stripe-key"]').attr('content'));
     // Watch for a form submission:
     $("#form-submit-btn").click(function(event) {
         event.preventDefault();
@@ -23,7 +23,7 @@ $(document).ready(function() {
         return false;
     }); // form submission
 
-    function stripeResponeHndler(status, response) {
+    function stripeResponseHandler(status, response) {
         // Get a reference to the form:
         var f = $("#new_user");
         
